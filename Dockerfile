@@ -6,7 +6,7 @@ WORKDIR /src/
 COPY . .
  
 #Install app dependecies 
-RUN npm isntall
+RUN npm install
 
 #Expose port 300
 EXPOSE 3000
@@ -15,5 +15,5 @@ EXPOSE 3000
 ENV PORT=3000
 
 #FINALLY we tell the container to run the app
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev" ]
 
